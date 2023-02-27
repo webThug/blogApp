@@ -1,7 +1,7 @@
 import React, { Suspense, useContext, useState } from 'react';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTheme } from 'app/providers/themeProvider';
+import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { NavBar } from 'widgets/NavBar';
 import { SideBar } from 'widgets/SideBar';
