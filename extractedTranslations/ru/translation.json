@@ -2,8 +2,13 @@
   "('throw error')": "('throw error')",
   "('Обновить страницу')": "('Обновить страницу')",
   "('Произошла непредвиденная ошибка')": "('Произошла непредвиденная ошибка')",
+  "Lorem ipsum": "Lorem ipsum",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?"
+  },
   "html-webpack-plugin": "html-webpack-plugin",
   "throw error": "throw error",
+  "Войти": "Войти",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",
   "Обновить страницу": "Обновить страницу",
