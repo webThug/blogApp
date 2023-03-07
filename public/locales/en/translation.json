@@ -8,6 +8,7 @@
   "html-webpack-plugin": "html-webpack-plugin",
   "Короткий язык": "En",
   "Войти": "Войти",
-  "Lorem ipsum": "Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?"
-
+  "Lorem ipsum": "Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?",
+  "decrement": "decrement",
+  "increment": "increment"
 }

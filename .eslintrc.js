@@ -51,6 +51,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
