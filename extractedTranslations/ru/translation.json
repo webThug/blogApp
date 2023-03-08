@@ -10,6 +10,8 @@
   "html-webpack-plugin": "html-webpack-plugin",
   "increment": "increment",
   "throw error": "throw error",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",
