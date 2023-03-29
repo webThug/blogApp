@@ -5,10 +5,12 @@
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Обновить страницу": "Обновить страницу",
   "throw error": "возникла ошибка",
-  "html-webpack-plugin": "html-webpack-plugin",
   "Короткий язык": "Рус",
   "Войти": "Войти",
   "Lorem ipsum": "Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "Форма авторизации": "Форма авторизации",
+  "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
+  "Выйти": "Выйти"
 }
