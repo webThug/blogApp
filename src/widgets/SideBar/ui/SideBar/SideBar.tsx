@@ -1,38 +1,40 @@
-import React, { FC, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher/LanguageSwitcher';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
+import { memo, useMemo, useState } from 'react';
 import { Button, ButtonSize, ButtonVariant } from 'shared/ui/Button/Button';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { useTranslation } from 'react-i18next';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
-import AboutIcon from 'shared/assets/icons/about-20-20.svg';
-import MainIcon from 'shared/assets/icons/main-20-20.svg';
-import cls from './SideBar.module.scss';
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
+import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher/LanguageSwitcher';
+import cls from './Sidebar.module.scss';
+import { SidebarItemsList } from '../../model/items';
+import { SidebarItem } from '../SidebarItem/SidebarItem';
 
-interface SideBarProps {
-  className?: string;
+interface SidebarProps {
+    className?: string;
 }
 
-export const SideBar: FC<SideBarProps> = ({ className }) => {
+export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-    const { t } = useTranslation();
 
     const onToggle = () => {
         setCollapsed((prev) => !prev);
     };
 
+    const itemsList = useMemo(() => SidebarItemsList.map((item) => (
+        <SidebarItem
+            item={item}
+            collapsed={collapsed}
+            key={item.path}
+        />
+    )), [collapsed]);
+
     return (
         <div
             data-testid="sidebar"
-            className={classNames(cls.SideBar, { [cls.collapsed]: collapsed }, [className])}
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
-
             <Button
-                data-testid="toggle"
-                type="button"
+                data-testid="sidebar-toggle"
                 onClick={onToggle}
-                className={cls.collapsedBtn}
+                className={cls.collapseBtn}
                 variant={ButtonVariant.BACKGROUND_INVERTED}
                 size={ButtonSize.L}
                 square
@@ -40,31 +42,15 @@ export const SideBar: FC<SideBarProps> = ({ className }) => {
                 {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.items}>
-                <AppLink
-                    theme={AppLinkTheme.SECONDARY}
-                    to={RoutePath.main}
-                    className={cls.item}
-                >
-                    <MainIcon className={cls.icon} />
-                    <span className={cls.link}>
-                        {t('Главная страница')}
-                    </span>
-                </AppLink>
-                <AppLink
-                    to={RoutePath.about}
-                    theme={AppLinkTheme.SECONDARY}
-                    className={cls.item}
-                >
-                    <AboutIcon className={cls.icon} />
-                    <span className={cls.link}>
-                        {t('О сайте')}
-                    </span>
-                </AppLink>
+                {itemsList}
             </div>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
-                <LanguageSwitcher className={cls.lang} short={collapsed} />
+                <LanguageSwitcher
+                    short={collapsed}
+                    className={cls.lang}
+                />
             </div>
         </div>
     );
-};
+});
