@@ -31,7 +31,7 @@ export const Button = memo((props:ButtonProps) => {
     const {
         className,
         children,
-        variant,
+        variant = ButtonVariant.OUTLINE,
         square,
         disabled,
         size = ButtonSize.M,

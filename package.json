@@ -109,7 +109,8 @@
         "target": "chrome.app",
         "preset": "iPhone 7"
       }
-    }
+    },
+    "fetchFailIgnore": ".*"
   },
   "overrides": {
     "chrome-remote-interface": "^0.32.1"

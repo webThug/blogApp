@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { NavBar } from 'widgets/NavBar';
-import { SideBar } from 'widgets/SideBar';
+import { Sidebar } from 'widgets/SideBar';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 
@@ -20,7 +20,7 @@ const App = () => {
             <Suspense fallback="">
                 <NavBar />
                 <div className="content-page">
-                    <SideBar />
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>

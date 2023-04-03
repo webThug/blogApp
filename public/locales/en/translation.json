@@ -1,16 +1,20 @@
 {
-  "Язык": "English",
   "Перевод": "Translate",
+  "Главная страница": "Main page",
+  "Язык": "English",
+  "новый перевод": "новый перевод",
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
-  "Обновить страницу": "Refresh the page",
+  "Обновить страницу": "Reload page",
   "throw error": "throw error",
+  "Главная": "Main",
+  "О сайте": "About us",
+  "Переключить": "Switch",
   "Короткий язык": "En",
   "Войти": "Login",
-  "Lorem ipsum": "Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum eos id nam optio repellat voluptates? A autem dolores eos, nobis quod soluta tempora?",
-  "decrement": "decrement",
-  "increment": "increment",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
   "Форма авторизации": "Auth form",
-  "Вы ввели неверный логин или пароль": "You have entered an incorrect username or password",
-  "Выйти": "Выйти"
+  "Вы ввели неверный логин или пароль": "Uncorrect username or password",
+  "Выйти": "Logout"
 }
