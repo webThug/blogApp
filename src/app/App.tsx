@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { NavBar } from 'widgets/NavBar';
-import { Sidebar } from 'widgets/SideBar';
+import { SideBar } from 'widgets/SideBar';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserInited, userActions } from 'entities/User';
 
@@ -21,7 +21,7 @@ const App = () => {
             <Suspense fallback="">
                 <NavBar />
                 <div className="content-page">
-                    <Sidebar />
+                    <SideBar />
                     {inited && <AppRouter />}
                 </div>
             </Suspense>
