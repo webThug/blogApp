@@ -1,5 +1,5 @@
 import { fireEvent, screen } from '@testing-library/react';
-import { SideBar } from 'widgets/Sidebar/ui/SideBar/SideBar';
+import { SideBar } from 'widgets/SideBar/ui/Sidebar/SideBar';
 import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
 
 describe('Sidebar', () => {
