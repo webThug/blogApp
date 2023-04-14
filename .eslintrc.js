@@ -56,6 +56,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
             'warn',
         ],
+        'react/no-array-index-key': 'off',
     },
     globals: {
         __IS_DEV__: true,
